@@ -11,7 +11,7 @@ angular.module('ui.chart', [])
           if (!angular.isArray(data)) {
             return;
           }
-
+          elem.html('');
           var opts = {};
           if (!angular.isUndefined(attrs.chartOptions)) {
             opts = scope.$eval(attrs.chartOptions);
